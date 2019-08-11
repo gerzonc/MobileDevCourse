@@ -9,4 +9,4 @@ Validations:
 - Password must be hidden (Use property isPassword="true")
 
 # My implementation
-I used course so-far-given topics, as well as Custom Renderer and Frames for better design in LoginPage.Android. Not tested with LoginPage.iOS
+I used course so-far-given topics, as well as Custom Renderer, Frames and custom fonts for better design in LoginPage.Android. Not tested with LoginPage.iOS
