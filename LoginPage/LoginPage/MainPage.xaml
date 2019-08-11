@@ -3,17 +3,33 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             x:Class="LoginPage.MainPage"
+             xmlns:Controls="clr-namespace:LoginPage.Controls"
              mc:Ignorable="d"
-             x:Class="LoginPage.MainPage">
-
+             BackgroundImageSource="bg.jpg">
     <ScrollView>
         <StackLayout VerticalOptions="Center" Padding="30">
+            <Image Source="github_logo.png" HorizontalOptions="Center"
+                    HeightRequest="120"
+                    Margin="30"/>
+            <Frame Padding="10,1">
+                <Controls:CustomEntry x:Name="usernameEntry" Placeholder="Username" 
+                   PlaceholderColor="Black"
+                   TextColor="Black" Keyboard="Email"/>
+            </Frame>
 
-            <Entry x:Name="usernameEntry" Placeholder="Username"/>
-            <Entry x:Name="passwordEntry" Placeholder="Password"/>
-            <Button x:Name="loginButton" BackgroundColor="MediumPurple" 
-                    Text="LOGIN" TextColor="White" HorizontalOptions="Center" 
+            <Frame Padding="10,1">
+                <Controls:CustomEntry x:Name="passwordEntry" Placeholder="Password"
+                       PlaceholderColor="Black"
+                       TextColor="Black"
+                       IsPassword="True"/>
+            </Frame>
+            <Button x:Name="loginButton" BackgroundColor="White" 
+                    Text="LOGIN" TextColor="MediumPurple" HorizontalOptions="Center" 
                     Padding="40,10" CornerRadius="10" Margin="20"/>
+            <Label Text="Forgot your password? So sad!" TextColor="White" 
+                   VerticalOptions="End"
+                   HorizontalOptions="CenterAndExpand"/>
         </StackLayout>
     </ScrollView>
 
