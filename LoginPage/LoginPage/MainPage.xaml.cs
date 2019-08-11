@@ -24,7 +24,7 @@ namespace LoginPage
             if (string.IsNullOrWhiteSpace(usernameEntry.Text) || string.IsNullOrWhiteSpace(passwordEntry.Text))
                 await DisplayAlert("Error", "Username or password not valid", "OK");
             else
-                await DisplayAlert("Bienvenido", $"Hola, {usernameEntry.Text}", "OK");
+                await DisplayAlert("Welcome", $"Hi, {usernameEntry.Text}!", "OK");
         }
     }
 }
