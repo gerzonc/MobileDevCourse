@@ -31,7 +31,6 @@ namespace CustomRenderer.Android
             if (Control != null)
             {
                 Control.SetBackgroundColor(global::Android.Graphics.Color.Transparent);
-                Control.Typeface = Typeface.CreateFromAsset(Context.Assets, "gothamrounded.ttf");
             }
         }
     }

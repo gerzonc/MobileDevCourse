@@ -6,6 +6,10 @@
              mc:Ignorable="d"
              x:Class="LoginPage.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            <OnPlatform x:TypeArguments="x:String" x:Key="gothamFont">
+                <On Platform="Android" Value="gothamrounded.ttf#Gotham Rounded"/>
+            </OnPlatform>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
