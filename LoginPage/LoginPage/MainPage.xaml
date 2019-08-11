@@ -26,7 +26,8 @@
             </Frame>
             <Button x:Name="loginButton" BackgroundColor="White" 
                     Text="LOGIN" TextColor="MediumPurple" HorizontalOptions="Center" 
-                    Padding="40,10" CornerRadius="10" Margin="20"/>
+                    Padding="40,10" CornerRadius="10" Margin="20"
+                    Clicked="LoginAlert"/>
             <Label Text="Forgot your password? So sad!" TextColor="White" 
                    VerticalOptions="End"
                    HorizontalOptions="CenterAndExpand"/>
