@@ -7,8 +7,8 @@
              x:Class="LoginPage.App">
     <Application.Resources>
         <ResourceDictionary>
-            <OnPlatform x:TypeArguments="x:String" x:Key="gothamFont">
-                <On Platform="Android" Value="gothamrounded.ttf#Gotham Rounded"/>
+            <OnPlatform x:TypeArguments="x:String" x:Key="valeraFont">
+                <On Platform="Android" Value="valeraround.ttf#Valera Round"/>
             </OnPlatform>
         </ResourceDictionary>
     </Application.Resources>

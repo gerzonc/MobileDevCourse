@@ -15,22 +15,22 @@
             <Frame Padding="10,1">
                 <Controls:CustomEntry x:Name="usernameEntry" Placeholder="Username" 
                    PlaceholderColor="LightGray"
-                   TextColor="Black" Keyboard="Email" FontFamily="{StaticResource gothamFont}"/>
+                   TextColor="Black" Keyboard="Email" FontFamily="{StaticResource valeraFont}"/>
             </Frame>
 
             <Frame Padding="10,1" Margin="0,8">
                 <Controls:CustomEntry x:Name="passwordEntry" Placeholder="Password"
                        PlaceholderColor="LightGray"
                        TextColor="Black"
-                       IsPassword="True" FontFamily="{StaticResource gothamFont}"/>
+                       IsPassword="True" FontFamily="{StaticResource valeraFont}"/>
             </Frame>
             <Button x:Name="loginButton" BackgroundColor="White" 
                     Text="LOGIN" TextColor="MediumPurple" HorizontalOptions="Center" 
                     Padding="40,10" CornerRadius="10" Margin="20"
-                    Clicked="LoginAlert" FontFamily="{StaticResource gothamFont}"/>
+                    Clicked="LoginAlert" FontFamily="{StaticResource valeraFont}"/>
             <Label Text="Forgot your password? So sad!" TextColor="White" 
                    VerticalOptions="End"
-                   HorizontalOptions="CenterAndExpand" FontFamily="{StaticResource gothamFont}"/>
+                   HorizontalOptions="CenterAndExpand" FontFamily="{StaticResource valeraFont}"/>
         </StackLayout>
     </ScrollView>
 
