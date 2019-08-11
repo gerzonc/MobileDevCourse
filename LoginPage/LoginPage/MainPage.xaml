@@ -14,13 +14,13 @@
                     Margin="30"/>
             <Frame Padding="10,1">
                 <Controls:CustomEntry x:Name="usernameEntry" Placeholder="Username" 
-                   PlaceholderColor="Black"
+                   PlaceholderColor="LightGray"
                    TextColor="Black" Keyboard="Email"/>
             </Frame>
 
             <Frame Padding="10,1">
                 <Controls:CustomEntry x:Name="passwordEntry" Placeholder="Password"
-                       PlaceholderColor="Black"
+                       PlaceholderColor="LightGray"
                        TextColor="Black"
                        IsPassword="True"/>
             </Frame>
