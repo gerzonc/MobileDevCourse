@@ -18,7 +18,7 @@
                    TextColor="Black" Keyboard="Email" FontFamily="{StaticResource gothamFont}"/>
             </Frame>
 
-            <Frame Padding="10,1">
+            <Frame Padding="10,1" Margin="0,8">
                 <Controls:CustomEntry x:Name="passwordEntry" Placeholder="Password"
                        PlaceholderColor="LightGray"
                        TextColor="Black"
