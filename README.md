@@ -1,8 +1,7 @@
-# MobileDevCourse
-This repository contains all the practices that I made on my Mobile Application Development Course. Every homework it's a branch from this repository.
-
-# Homework 1 - Login Page:
-https://tinyurl.com/y65hulcu
-
 # Homework Extra I - Replicate Design
-https://tinyurl.com/y3ubnos2
+
+## Description
+Replicate this application design:
+<p align="center">
+  <img src="https://i.imgur.com/GFIFSqt.png" width="250" title="hover text">
+</p>
