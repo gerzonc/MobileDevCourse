@@ -3,3 +3,6 @@ This repository contains all the practices that I made on my Mobile Application 
 
 # Homework 1 - Login Page:
 https://tinyurl.com/y65hulcu
+
+# Homework Extra I - Replicate Design
+https://tinyurl.com/y3ubnos2
