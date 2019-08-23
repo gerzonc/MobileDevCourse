@@ -4,45 +4,79 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="ReplicateDesignI.MainPage" 
+             x:Class="ReplicateDesignI.MainPage"
              BackgroundImageSource="bg">
-    <Grid RowSpacing="5" ColumnSpacing="5">
+
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" BackgroundColor="Transparent">
+            <Label Text="YOUR LOGO" FontSize="15" TextColor="White" FontAttributes="Bold"
+                   HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+            <ImageButton Source="ic_information" BackgroundColor="Transparent"
+                         Margin="10,0" VerticalOptions="End"
+                         HorizontalOptions="End"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="100"/>
-            <RowDefinition Height="100"/>
-            <RowDefinition Height="100"/>
-            <RowDefinition Height="100"/>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="120"/>
         </Grid.RowDefinitions>
-
+            
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="180"/>
         </Grid.ColumnDefinitions>
+        <Frame Grid.Row="0" Grid.RowSpan="2" Grid.ColumnSpan="2" BackgroundColor="Transparent">
+            <Label Text="Here you can place your own awesome image!"
+                   HorizontalOptions="Center" VerticalOptions="Center"
+                   TextColor="Black" FontSize="25" FontAttributes="Bold" 
+                   HorizontalTextAlignment="Center"/>
+        </Frame>
 
-        <Button Text="Here you can place your own image" FontSize="20" FontAttributes="Bold"
-                   TextColor="White" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="2" 
-                    BackgroundColor="Transparent"/>
+        <Frame Grid.Row="2" Grid.Column="0" Margin="20,0,0,0" BackgroundColor="White"
+               Opacity="0.9">
+            <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand"
+                         VerticalOptions="CenterAndExpand">
+                <Image Source="ic_cloud" HeightRequest="50"/>
+                <Label Text="Weather" Margin="0,0,0,10" FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"/>
+            </StackLayout>
+        </Frame>
 
-        <Frame Opacity="0.9" Grid.Row="3" Grid.Column="1" Margin="20,0,0,0" Padding="0">
-            <Button BackgroundColor="White" Image="ic_weather" ContentLayout="Top,-35"
-                        HorizontalOptions="Center" Padding="1"
-                        Text="Weather" TextColor="Black"/>
+        <Frame Grid.Row="2" Grid.Column="1" Margin="0,0,20,0" BackgroundColor="White"
+               Opacity="0.9">
+            <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand"
+                         VerticalOptions="CenterAndExpand">
+                <Image Source="ic_location" HeightRequest="50"/>
+                <Label Text="Location" Margin="0,0,0,10" FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"/>
+            </StackLayout>
         </Frame>
-        <Frame  Opacity="0.9" Grid.Row="3" Grid.Column="2"  Margin="0,0,20,0" Padding="0">
-            <Button BackgroundColor="White" Image="ic_location" HeightRequest="20" ContentLayout="Top,-25"
-                        HorizontalOptions="Center" Padding="1"
-                        Text="Location" TextColor="Black"/>
+
+        <Frame Grid.Row="3" Grid.Column="1" Margin="0,0,20,0" BackgroundColor="White"
+               Opacity="0.9">
+            <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand"
+                         VerticalOptions="CenterAndExpand">
+                <Image Source="ic_team" HeightRequest="50"/>
+                <Label Text="Crew" Margin="0,0,0,10" FontAttributes="Bold" 
+                       HorizontalTextAlignment="Center"/>
+            </StackLayout>
         </Frame>
-        <Frame Opacity="0.9" Grid.Row="4" Grid.Column="1" Margin="20,0,0,0" Padding="0">
-            <Button BackgroundColor="White" Image="ic_radio"  ContentLayout="Top,-35"
-                        HorizontalOptions="Center" Padding="5"
-                        Text="Radio" TextColor="Black"/>
+        
+        <Frame Grid.Row="3" Grid.Column="0" Margin="20,0,0,0" BackgroundColor="White"
+               Opacity="0.9">
+            <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand"
+                         VerticalOptions="CenterAndExpand">
+                <Image Source="ic_radio" HeightRequest="50"/>
+                <Label Text="Radio" Margin="0,0,0,10" FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"/>
+            </StackLayout>
         </Frame>
-        <Frame Opacity="0.9" Grid.Row="4" Grid.Column="2" Margin="0,0,20,0" Padding="0">
-            <Button BackgroundColor="White" Image="ic_team" HeightRequest="20" ContentLayout="Top,-35"
-                        HorizontalOptions="Center" Padding="5"
-                        Text="Crew" TextColor="Black"/>
-        </Frame>
+
+        
 
     </Grid>
+
 </ContentPage>
