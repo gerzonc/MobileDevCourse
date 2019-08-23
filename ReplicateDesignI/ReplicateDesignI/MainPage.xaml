@@ -4,13 +4,45 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="ReplicateDesignI.MainPage">
+             x:Class="ReplicateDesignI.MainPage" 
+             BackgroundImageSource="bg">
+    <Grid RowSpacing="5" ColumnSpacing="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
 
-    <StackLayout>
-        <!-- I'll work on this tomorrow -->
-        <Label Text="Welcome to Xamarin Forks!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
 
+        <Button Text="Here you can place your own image" FontSize="20" FontAttributes="Bold"
+                   TextColor="White" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="2" 
+                    BackgroundColor="Transparent"/>
+
+        <Frame Opacity="0.9" Grid.Row="3" Grid.Column="1" Margin="20,0,0,0" Padding="0">
+            <Button BackgroundColor="White" Image="ic_weather" ContentLayout="Top,-35"
+                        HorizontalOptions="Center" Padding="1"
+                        Text="Weather" TextColor="Black"/>
+        </Frame>
+        <Frame  Opacity="0.9" Grid.Row="3" Grid.Column="2"  Margin="0,0,20,0" Padding="0">
+            <Button BackgroundColor="White" Image="ic_location" HeightRequest="20" ContentLayout="Top,-25"
+                        HorizontalOptions="Center" Padding="1"
+                        Text="Location" TextColor="Black"/>
+        </Frame>
+        <Frame Opacity="0.9" Grid.Row="4" Grid.Column="1" Margin="20,0,0,0" Padding="0">
+            <Button BackgroundColor="White" Image="ic_radio"  ContentLayout="Top,-35"
+                        HorizontalOptions="Center" Padding="5"
+                        Text="Radio" TextColor="Black"/>
+        </Frame>
+        <Frame Opacity="0.9" Grid.Row="4" Grid.Column="2" Margin="0,0,20,0" Padding="0">
+            <Button BackgroundColor="White" Image="ic_team" HeightRequest="20" ContentLayout="Top,-35"
+                        HorizontalOptions="Center" Padding="5"
+                        Text="Crew" TextColor="Black"/>
+        </Frame>
+
+    </Grid>
 </ContentPage>

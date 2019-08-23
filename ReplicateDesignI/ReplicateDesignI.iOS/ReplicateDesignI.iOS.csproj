@@ -130,4 +130,7 @@
       <Name>ReplicateDesignI</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_cloud.png" />
+  </ItemGroup>
 </Project>
