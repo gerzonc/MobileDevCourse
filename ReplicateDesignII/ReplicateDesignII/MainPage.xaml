@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ReplicateDesignII.MainPage"
+             BackgroundImageSource="bg">
+
+    <ScrollView>
+        <Frame Margin="25,225,25,0" BackgroundColor="White" Padding="15" CornerRadius="15">
+            <StackLayout>
+                <Label Text="Fancy Hotel" TextColor="DarkSlateBlue" FontSize="20" 
+                       FontAttributes="Bold"/>
+                <Label Text="7 May, 2018 | 4:26"/>
+                <Label Text="Mt Carmel PL, New York, NY"/>
+                <StackLayout Orientation="Horizontal">
+                    <Frame BorderColor="LightGray" CornerRadius="15" HeightRequest="1" WidthRequest="10"> 
+                        <Label Text="Hostel"/>
+                    </Frame>
+                    <Frame BorderColor="LightGray" CornerRadius="15">
+                        <Label Text="Hotel"/>
+                    </Frame>
+                </StackLayout>
+
+                <BoxView WidthRequest="1" HeightRequest="1" BackgroundColor="LightGray"/>
+
+                <Label Text="About Hotel" FontSize="15" FontAttributes="Bold"/>
+
+                <StackLayout>
+                    <ContentView>
+                        <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In turpis arcu, dictum sit amet accumsan at, 
+                           dapibus et urna. Mauris ac interdum massa. Vivamus ullamcorper odio ut ultricies molestie. Mauris nec posuere 
+                           lacus, non ultricies orci. Mauris sagittis convallis enim at faucibus. Maecenas blandit felis porta orci rutrum, 
+                           sed lobortis sem condimentum. Proin scelerisque scelerisque nunc, ac pellentesque dolor maximus sed. "></Label>
+                    </ContentView>
+                </StackLayout>
+
+                <Button Text="what the fuck" WidthRequest="15"/>
+
+            </StackLayout>
+
+        </Frame>
+    </ScrollView>
+
+
+</ContentPage>
