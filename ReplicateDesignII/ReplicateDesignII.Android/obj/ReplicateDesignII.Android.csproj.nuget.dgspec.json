@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gerzo\\source\\repos\\ReplicateDesignII\\ReplicateDesignII\\ReplicateDesignII.Android\\ReplicateDesignII.Android.csproj": {}
+    "C:\\Users\\gerzo\\Documents\\GitHub\\MobileDevCourse\\ReplicateDesignII\\ReplicateDesignII.Android\\ReplicateDesignII.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gerzo\\source\\repos\\ReplicateDesignII\\ReplicateDesignII\\ReplicateDesignII.Android\\ReplicateDesignII.Android.csproj": {
+    "C:\\Users\\gerzo\\Documents\\GitHub\\MobileDevCourse\\ReplicateDesignII\\ReplicateDesignII.Android\\ReplicateDesignII.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gerzo\\source\\repos\\ReplicateDesignII\\ReplicateDesignII\\ReplicateDesignII.Android\\ReplicateDesignII.Android.csproj",
+        "projectUniqueName": "C:\\Users\\gerzo\\Documents\\GitHub\\MobileDevCourse\\ReplicateDesignII\\ReplicateDesignII.Android\\ReplicateDesignII.Android.csproj",
         "projectName": "ReplicateDesignII.Android",
-        "projectPath": "C:\\Users\\gerzo\\source\\repos\\ReplicateDesignII\\ReplicateDesignII\\ReplicateDesignII.Android\\ReplicateDesignII.Android.csproj",
+        "projectPath": "C:\\Users\\gerzo\\Documents\\GitHub\\MobileDevCourse\\ReplicateDesignII\\ReplicateDesignII.Android\\ReplicateDesignII.Android.csproj",
         "packagesPath": "C:\\Users\\gerzo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gerzo\\source\\repos\\ReplicateDesignII\\ReplicateDesignII\\ReplicateDesignII.Android\\obj\\",
+        "outputPath": "C:\\Users\\gerzo\\Documents\\GitHub\\MobileDevCourse\\ReplicateDesignII\\ReplicateDesignII.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\Users\\gerzo\\source\\repos\\ReplicateDesignII\\ReplicateDesignII\\ReplicateDesignII\\ReplicateDesignII.csproj": {
-                "projectPath": "C:\\Users\\gerzo\\source\\repos\\ReplicateDesignII\\ReplicateDesignII\\ReplicateDesignII\\ReplicateDesignII.csproj"
+              "C:\\Users\\gerzo\\Documents\\GitHub\\MobileDevCourse\\ReplicateDesignII\\ReplicateDesignII\\ReplicateDesignII.csproj": {
+                "projectPath": "C:\\Users\\gerzo\\Documents\\GitHub\\MobileDevCourse\\ReplicateDesignII\\ReplicateDesignII\\ReplicateDesignII.csproj"
               }
             }
           }
@@ -82,14 +82,14 @@
         }
       }
     },
-    "C:\\Users\\gerzo\\source\\repos\\ReplicateDesignII\\ReplicateDesignII\\ReplicateDesignII\\ReplicateDesignII.csproj": {
+    "C:\\Users\\gerzo\\Documents\\GitHub\\MobileDevCourse\\ReplicateDesignII\\ReplicateDesignII\\ReplicateDesignII.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gerzo\\source\\repos\\ReplicateDesignII\\ReplicateDesignII\\ReplicateDesignII\\ReplicateDesignII.csproj",
+        "projectUniqueName": "C:\\Users\\gerzo\\Documents\\GitHub\\MobileDevCourse\\ReplicateDesignII\\ReplicateDesignII\\ReplicateDesignII.csproj",
         "projectName": "ReplicateDesignII",
-        "projectPath": "C:\\Users\\gerzo\\source\\repos\\ReplicateDesignII\\ReplicateDesignII\\ReplicateDesignII\\ReplicateDesignII.csproj",
+        "projectPath": "C:\\Users\\gerzo\\Documents\\GitHub\\MobileDevCourse\\ReplicateDesignII\\ReplicateDesignII\\ReplicateDesignII.csproj",
         "packagesPath": "C:\\Users\\gerzo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gerzo\\source\\repos\\ReplicateDesignII\\ReplicateDesignII\\ReplicateDesignII\\obj\\",
+        "outputPath": "C:\\Users\\gerzo\\Documents\\GitHub\\MobileDevCourse\\ReplicateDesignII\\ReplicateDesignII\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

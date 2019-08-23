@@ -8,40 +8,72 @@
              BackgroundImageSource="bg">
 
     <ScrollView>
-        <Frame Margin="25,225,25,0" BackgroundColor="White" Padding="15" CornerRadius="15">
-            <StackLayout>
-                <Label Text="Fancy Hotel" TextColor="DarkSlateBlue" FontSize="20" 
+        <Frame Margin="25,225,25,0" BackgroundColor="White" Padding="15" CornerRadius="10">
+            <AbsoluteLayout>
+                
+                <StackLayout Orientation="Vertical">
+                    <Label Text="Fancy Hotel" TextColor="DarkSlateBlue" FontSize="20" 
                        FontAttributes="Bold"/>
-                <Label Text="7 May, 2018 | 4:26"/>
-                <Label Text="Mt Carmel PL, New York, NY"/>
-                <StackLayout Orientation="Horizontal">
-                    <Frame BorderColor="LightGray" CornerRadius="15" HeightRequest="1" WidthRequest="10"> 
-                        <Label Text="Hostel"/>
-                    </Frame>
-                    <Frame BorderColor="LightGray" CornerRadius="15">
-                        <Label Text="Hotel"/>
-                    </Frame>
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="ic_clock" HeightRequest="20"/>
+                        <Label Text="7 May, 2018 | 4:26" VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="ic_location" HeightRequest="20"/>
+                        <Label Text="Mt Carmel PL, New York, NY" VerticalTextAlignment="Center"/>
+                    </StackLayout>
                 </StackLayout>
 
-                <BoxView WidthRequest="1" HeightRequest="1" BackgroundColor="LightGray"/>
-
-                <Label Text="About Hotel" FontSize="15" FontAttributes="Bold"/>
+                <FlexLayout AlignContent="SpaceEvenly" Wrap="Wrap">
+                    <Frame BorderColor="LightGray" CornerRadius="35" HeightRequest="35" 
+                           WidthRequest="70" Padding="0" Margin="5">
+                        <Label Text="Hostel" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"/>
+                    </Frame>
+                    <Frame BorderColor="LightGray" CornerRadius="35" HeightRequest="35" 
+                           WidthRequest="70" Padding="0" Margin="5">
+                        <Label Text="Hotel" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"/>
+                    </Frame>
+                    <Frame BorderColor="LightGray" CornerRadius="35" HeightRequest="35" 
+                           WidthRequest="70" Padding="0" Margin="5">
+                        <Label Text="Parking" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"/>
+                    </Frame>
+                    <Frame BorderColor="LightGray" CornerRadius="35" HeightRequest="35" 
+                                Margin="5"
+                           WidthRequest="95" Padding="0">
+                        <Label Text="Restaurant" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"/>
+                    </Frame>
+                    <Frame BorderColor="LightGray" CornerRadius="35" HeightRequest="35" 
+                                Margin="5"
+                           WidthRequest="70" Padding="0">
+                        <Label Text="Room" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"/>
+                    </Frame>
+                    <Frame BorderColor="LightGray" CornerRadius="35" HeightRequest="35" 
+                                Margin="5"
+                           WidthRequest="70" Padding="0">
+                        <Label Text="Spa" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"/>
+                    </Frame>
+                </FlexLayout>
+                  
+                <BoxView WidthRequest="1" HeightRequest="1" BackgroundColor="LightGray" Margin="10"/>
 
                 <StackLayout>
-                    <ContentView>
-                        <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In turpis arcu, dictum sit amet accumsan at, 
-                           dapibus et urna. Mauris ac interdum massa. Vivamus ullamcorper odio ut ultricies molestie. Mauris nec posuere 
-                           lacus, non ultricies orci. Mauris sagittis convallis enim at faucibus. Maecenas blandit felis porta orci rutrum, 
-                           sed lobortis sem condimentum. Proin scelerisque scelerisque nunc, ac pellentesque dolor maximus sed. "></Label>
-                    </ContentView>
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="About Hotel" FontSize="15" FontAttributes="Bold"/>
+                        <ContentView>
+                            <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut sollicitudin orci. Duis laoreet molestie magna nec iaculis. Phasellus a magna mauris. Nam blandit vulputate porta. Vestibulum fringilla at turpis eu ornare. In fringilla, leo feugiat ornare posuere, sem nisi blandit orci, eget tincidunt sem arcu vitae augue. Fusce dignissim maximus justo vel posuere. Etiam rhoncus erat eu ligula tristique tincidunt.
+
+Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec vulputate rutrum consequat. Duis tempor fringilla diam, non hendrerit nisl tempor vitae. Curabitur venenatis leo finibus est finibus bibendum. Aliquam erat volutpat. Vestibulum vehicula neque vulputate, pulvinar magna et, rhoncus neque. Phasellus consequat orci non auctor tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut placerat arcu at velit pulvinar, in faucibus mauris scelerisque." 
+                           LineBreakMode="WordWrap"/>
+                        </ContentView>
+                    </StackLayout>
                 </StackLayout>
-
-                <Button Text="what the fuck" WidthRequest="15"/>
-
-            </StackLayout>
-
+            </AbsoluteLayout>
         </Frame>
     </ScrollView>
-
-
 </ContentPage>
