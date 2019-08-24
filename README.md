@@ -9,3 +9,6 @@ https://tinyurl.com/y3ubnos2
 
 ## Homework Extra II - Replicate Design:
 https://tinyurl.com/y4afo4gg
+
+## Homework 2 - Login Page (MVVM + Data Binding + INotifyPropertyChanged):
+https://tinyurl.com/yxj2osuu
