@@ -9,8 +9,8 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem Name="AddItem" Order="Primary" Text="Add" Priority="0" Command="{Binding AddItem}" />
     </ContentPage.ToolbarItems>
-    <ListView x:Name="MyListView"
-            ItemsSource="{Binding Items}"
+    <ListView 
+            ItemsSource="{Binding Contacts}"
             ItemTapped="Handle_ItemTapped"
             CachingStrategy="RecycleElement">
     <!--<d:ListView.ItemsSource>
@@ -39,12 +39,8 @@
                         <MenuItem Text="Delete"/>
                     </ViewCell.ContextActions>
                     <StackLayout>
-                        <Label Text="{Binding contact.Name}" 
-                       d:Text="{Binding .}"
-                       Style="{DynamicResource ListItemTextStyle}" />
-                        <Label Text="{Binding contact.PhoneNumber}" 
-                       d:Text="Detail"
-                       Style="{DynamicResource ListItemDetailTextStyle}"/>
+                        <Label Text="{Binding Name}" />
+                        <Label Text="{Binding PhoneNumber}"/>
                     </StackLayout>
                 </ViewCell>
             </DataTemplate>

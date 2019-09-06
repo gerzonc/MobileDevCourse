@@ -16,7 +16,7 @@ namespace LoginPage.Views
         public AddContactPage()
         {
             InitializeComponent();
-            BindingContext = new ContactsPageViewModel();
+            BindingContext = new AddContactPageViewModel();
         }
     }
 }

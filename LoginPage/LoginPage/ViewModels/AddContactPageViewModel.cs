@@ -17,10 +17,12 @@ namespace LoginPage.ViewModels
         {
             sendUser = new Command(async () =>
             {
-                MessagingCenter.Send(contact, "AddNew");
+                MessagingCenter.Send<AddContactPageViewModel, Contact>(this, "AddNew", contact);
                 await App.Current.MainPage.Navigation.PopAsync();
             });
+
             
+
 
         }
         public event PropertyChangedEventHandler PropertyChanged;

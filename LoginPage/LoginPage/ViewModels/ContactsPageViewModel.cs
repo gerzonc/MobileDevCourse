@@ -12,8 +12,7 @@ namespace LoginPage.ViewModels
 {
     public class ContactsPageViewModel : INotifyPropertyChanged
     {
-        public ObservableCollection<Contact> Contacts { get; set; }
-        public Contact contact { get; set; } = new Contact();
+        public ObservableCollection<Contact> Contacts { get; set; } = new ObservableCollection<Contact>();
         public ICommand AddItem { get; set; } 
 
         public ContactsPageViewModel()
@@ -21,12 +20,11 @@ namespace LoginPage.ViewModels
             AddItem = new Command(async () =>
             {
                 await App.Current.MainPage.Navigation.PushAsync(new AddContactPage());
-            });
+                MessagingCenter.Subscribe<AddContactPageViewModel, Contact>(this, "AddNew", (sender, args) =>
+                {
+                    Contacts.Add(args);
+                });
 
-
-            MessagingCenter.Subscribe<Contact>(this, "AddNew", (values) =>
-            {
-                Contacts.Add(values);
             });
         }
 
