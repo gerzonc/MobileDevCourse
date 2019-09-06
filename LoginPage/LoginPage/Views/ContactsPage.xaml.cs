@@ -1,4 +1,5 @@
-﻿using LoginPage.ViewModels;
+﻿using LoginPage.Models;
+using LoginPage.ViewModels;
 using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -13,6 +14,7 @@ namespace LoginPage.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ContactsPage : ContentPage
     {
+        public Contact contact { get; set; }
         public ObservableCollection<string> Items { get; set; }
 
         public ContactsPage()
@@ -26,7 +28,7 @@ namespace LoginPage.Views
             if (e.Item == null)
                 return;
 
-            await DisplayActionSheet("Item Tapped", "An item was tapped.", "OK");
+            await DisplayActionSheet(string.Empty, "Cancel", string.Empty, string.Empty);
 
             //Deselect Item
             ((ListView)sender).SelectedItem = null;
