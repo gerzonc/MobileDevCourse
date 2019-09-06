@@ -24,7 +24,8 @@ namespace LoginPage
 
         private async void RegisterTap(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new NavigationPage(new SignUpPage()));
+            await Navigation.PushAsync(new SignUpPage());
+
         }
     }
 }
