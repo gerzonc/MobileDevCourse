@@ -32,18 +32,22 @@
     <!--Custom View Cells-->
     
     <ListView.ItemTemplate>
-      <DataTemplate>
-        <ViewCell>
-          <StackLayout>
-            <Label Text="{Binding Text}" 
-                   d:Text="{Binding .}"
-                   Style="{DynamicResource ListItemTextStyle}" />
-            <Label Text="{Binding Detail}" 
-                   d:Text="Detail"
-                   Style="{DynamicResource ListItemDetailTextStyle}"/>
-          </StackLayout>
-        </ViewCell>
-      </DataTemplate>
+          <DataTemplate>
+                <ViewCell>
+                    <ViewCell.ContextActions>
+                        <MenuItem Text="More"/>
+                        <MenuItem Text="Delete"/>
+                    </ViewCell.ContextActions>
+                    <StackLayout>
+                        <Label Text="{Binding Text}" 
+                       d:Text="{Binding .}"
+                       Style="{DynamicResource ListItemTextStyle}" />
+                        <Label Text="{Binding Detail}" 
+                       d:Text="Detail"
+                       Style="{DynamicResource ListItemDetailTextStyle}"/>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
     </ListView.ItemTemplate>
     
   </ListView>
