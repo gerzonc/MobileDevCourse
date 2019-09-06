@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"   xmlns:Controls="clr-namespace:LoginPage.Controls"
+             x:Class="LoginPage.Views.SignUpPage" NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="bg">
+    <ScrollView>
+        <StackLayout VerticalOptions="Center" Padding="30">
+            <Image Source="github_logo.png" HorizontalOptions="Center"
+                    HeightRequest="120"
+                    Margin="30"/>
+
+            <Frame Padding="25,2" CornerRadius="20" Margin="15,8">
+                <Controls:CustomEntry x:Name="nameEntry" Text="{Binding user.Name}" Placeholder="Name" 
+                   PlaceholderColor="LightGray"
+                   TextColor="Black" Keyboard="Email" FontFamily="{StaticResource valeraFont}"/>
+            </Frame>
+
+
+            <Frame Padding="25,2" CornerRadius="20" Margin="15,0">
+                <Controls:CustomEntry x:Name="usernameEntry" Text="{Binding user.Username}" Placeholder="Username" 
+                   PlaceholderColor="LightGray"
+                   TextColor="Black" Keyboard="Email" FontFamily="{StaticResource valeraFont}"/>
+            </Frame>
+
+            <Frame Padding="25,2" CornerRadius="20" Margin="15,8">
+                <Controls:CustomEntry x:Name="passwordEntry" Text="{Binding user.Password}" Placeholder="Password"
+                       PlaceholderColor="LightGray"
+                       TextColor="Black"
+                       IsPassword="True" FontFamily="{StaticResource valeraFont}"/>
+            </Frame>
+
+            <Frame Padding="25,2" CornerRadius="20" Margin="15,0">
+                <Controls:CustomEntry x:Name="ConfpasswordEntry" Text="{Binding user.ConfirmPassword}" Placeholder="Confirm Password"
+                       PlaceholderColor="LightGray"
+                       TextColor="Black"
+                       IsPassword="True" FontFamily="{StaticResource valeraFont}"/>
+            </Frame>
+            
+            <Button x:Name="signUpButton" BackgroundColor="White" 
+                    Text="SIGN UP" TextColor="MediumPurple" HorizontalOptions="Center" 
+                    Padding="40,10" CornerRadius="25" Margin="0,10,0,0"
+                    Command="{Binding SignupCommand}" FontFamily="{StaticResource valeraFont}"/>
+            
+            <Label Text="{Binding fieldValidate, Mode=TwoWay}" TextColor="White"
+                   HorizontalOptions="Center" Margin="0,5"/>
+
+           
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
