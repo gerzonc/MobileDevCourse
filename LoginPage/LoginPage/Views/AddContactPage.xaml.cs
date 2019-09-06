@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LoginPage.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,7 @@ namespace LoginPage.Views
         public AddContactPage()
         {
             InitializeComponent();
+            BindingContext = new ContactsPageViewModel();
         }
     }
 }

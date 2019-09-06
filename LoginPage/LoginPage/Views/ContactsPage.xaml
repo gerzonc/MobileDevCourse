@@ -39,10 +39,10 @@
                         <MenuItem Text="Delete"/>
                     </ViewCell.ContextActions>
                     <StackLayout>
-                        <Label Text="{Binding Text}" 
+                        <Label Text="{Binding contact.Name}" 
                        d:Text="{Binding .}"
                        Style="{DynamicResource ListItemTextStyle}" />
-                        <Label Text="{Binding Detail}" 
+                        <Label Text="{Binding contact.PhoneNumber}" 
                        d:Text="Detail"
                        Style="{DynamicResource ListItemDetailTextStyle}"/>
                     </StackLayout>

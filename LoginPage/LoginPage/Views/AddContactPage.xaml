@@ -12,7 +12,8 @@
             <StackLayout VerticalOptions="CenterAndExpand">
                 
             </StackLayout>
-            <Button Text="Add" VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand"/>
+            <Button Text="Add" VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" 
+                    Command="{Binding sendUser}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

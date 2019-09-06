@@ -29,7 +29,7 @@ namespace LoginPage.ViewModels
                                                                         string.IsNullOrWhiteSpace(user.ConfirmPassword))
                     fieldValidate = "Passwords are different!";
                 else
-                    await App.Current.MainPage.Navigation.PushAsync(new ContactsPage());
+                    await App.Current.MainPage.Navigation.PushAsync(new NavigationPage(new ContactsPage()));
             });
         }
 

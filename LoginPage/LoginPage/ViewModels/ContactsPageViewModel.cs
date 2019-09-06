@@ -2,6 +2,7 @@
 using LoginPage.Views;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Text;
 using System.Windows.Input;
@@ -11,6 +12,7 @@ namespace LoginPage.ViewModels
 {
     public class ContactsPageViewModel : INotifyPropertyChanged
     {
+        public ObservableCollection<Contact> Contacts { get; set; }
         public Contact contact { get; set; } = new Contact();
         public ICommand AddItem { get; set; } 
 
@@ -20,8 +22,14 @@ namespace LoginPage.ViewModels
             {
                 await App.Current.MainPage.Navigation.PushAsync(new AddContactPage());
             });
+
+
+            MessagingCenter.Subscribe<Contact>(this, "AddNew", (values) =>
+            {
+                Contacts.Add(values);
+            });
         }
-       // public ICommand 
+
         public event PropertyChangedEventHandler PropertyChanged;
     }
 }
