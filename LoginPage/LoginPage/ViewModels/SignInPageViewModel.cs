@@ -21,7 +21,8 @@ namespace LoginPage.ViewModels
                 if (string.IsNullOrWhiteSpace(user.Username) || string.IsNullOrWhiteSpace(user.Password))
                     fieldValidate = "Fields can't be empty";
                 else
-                    await App.Current.MainPage.Navigation.PushAsync(new ContactsPage());
+                    (Application.Current as App).MainPage = new NavigationPage(new ContactsPage());
+                //await App.Current.MainPage.Navigation.PushModalAsync(new NavigationPage(new ContactsPage()));
             });
         }
 

@@ -4,42 +4,26 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="LoginPage.Views.ContactsPage">
+             x:Class="LoginPage.Views.ContactsPage"
+             Title="Contacts">
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Name="AddItem" Order="Primary" Text="Add" Priority="0" Command="{Binding AddItem}" />
     </ContentPage.ToolbarItems>
     <ListView 
-            ItemsSource="{Binding Contacts}"
-            ItemTapped="Handle_ItemTapped"
-            CachingStrategy="RecycleElement">
-    <!--<d:ListView.ItemsSource>
-        <x:Array Type="{x:Type x:String}">
-            <x:String>Item 1</x:String>
-            <x:String>Item 2</x:String>
-            <x:String>Item 3</x:String>
-            <x:String>Item 4</x:String>
-            <x:String>Item 5</x:String>
-        </x:Array>
-    </d:ListView.ItemsSource>-->
-    <!--Built in Cells-->
-    <!--<ListView.ItemTemplate>
-        <DataTemplate>
-            <TextCell Text="{Binding .}" d:Text="{Binding .}" />
-        </DataTemplate>
-    </ListView.ItemTemplate>-->
-    
-    <!--Custom View Cells-->
-    
-    <ListView.ItemTemplate>
+            x:Name="contactsLV" ItemsSource="{Binding Contacts}" SelectionMode="None" SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
+            IsPullToRefreshEnabled="True" CachingStrategy="RecycleElement">
+
+        <ListView.ItemTemplate>
           <DataTemplate>
                 <ViewCell>
                     <ViewCell.ContextActions>
-                        <MenuItem Text="More"/>
-                        <MenuItem Text="Delete"/>
+                        <MenuItem Text="More" Command="{Binding Path=BindingContext.MoreItem, Source={x:Reference contactsLV}}" CommandParameter="{Binding .}"/>
+                        <MenuItem Text="Delete" IsDestructive="True" Command="{Binding Path=BindingContext.DeleteItem, Source={x:Reference contactsLV}}" 
+                                  CommandParameter="{Binding .}"/>
                     </ViewCell.ContextActions>
                     <StackLayout>
-                        <Label Text="{Binding Name}" />
+                        <Label Text="{Binding Name}" FontAttributes="Bold"/>
                         <Label Text="{Binding PhoneNumber}"/>
                     </StackLayout>
                 </ViewCell>

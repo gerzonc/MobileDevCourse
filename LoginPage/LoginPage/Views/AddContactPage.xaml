@@ -4,7 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="LoginPage.Views.AddContactPage">
+             x:Class="LoginPage.Views.AddContactPage"
+             Title="New User">
     <ContentPage.Content>
         <StackLayout>
             <Entry Text="{Binding contact.Name}" Placeholder="Name"/>
@@ -12,8 +13,8 @@
             <StackLayout VerticalOptions="CenterAndExpand">
                 
             </StackLayout>
-            <Button Text="Add" VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" 
-                    Command="{Binding sendUser}"/>
+            <Button Text="Add" VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="Black"
+                    TextColor="White" Command="{Binding sendUser}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -15,23 +15,11 @@ namespace LoginPage.Views
     public partial class ContactsPage : ContentPage
     {
         public Contact contact { get; set; }
-        public ObservableCollection<string> Items { get; set; }
 
         public ContactsPage()
         {
             InitializeComponent();
             BindingContext = new ContactsPageViewModel();
-        }
-
-        async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
-        {
-            if (e.Item == null)
-                return;
-
-            await DisplayActionSheet(string.Empty, "Cancel", string.Empty, string.Empty);
-
-            //Deselect Item
-            ((ListView)sender).SelectedItem = null;
         }
     }
 }
