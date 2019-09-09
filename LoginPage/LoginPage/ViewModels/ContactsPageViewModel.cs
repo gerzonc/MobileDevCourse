@@ -34,7 +34,7 @@ namespace LoginPage.ViewModels
                 switch (actionSheet)
                 {
                     case "Edit":
-                        MessagingCenter.Send<ContactsPageViewModel, Contact>(this, "Edit", contact);
+                        MessagingCenter.Send<ContactsPageViewModel, Contact>(this, "Edit", args);
                         await App.Current.MainPage.Navigation.PushAsync(new EditContactPage());
                         break;
                     default:
