@@ -21,11 +21,6 @@ namespace LoginPage.ViewModels
                 await App.Current.MainPage.Navigation.PopAsync();
             });
 
-            MessagingCenter.Subscribe<ContactsPageViewModel, Contact>(this, "AddNew", (sender, param) => {
-                param.Name = sender.contact.Name;
-                param.PhoneNumber = sender.contact.PhoneNumber;
-                MessagingCenter.Unsubscribe<AddContactPageViewModel>(this, "AddNew");
-            });
         }
         public event PropertyChangedEventHandler PropertyChanged;
     }

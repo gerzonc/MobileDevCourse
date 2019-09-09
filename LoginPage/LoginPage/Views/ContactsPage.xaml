@@ -11,8 +11,8 @@
         <ToolbarItem Name="AddItem" Order="Primary" Text="Add" Priority="0" Command="{Binding AddItem}" />
     </ContentPage.ToolbarItems>
     <ListView 
-            x:Name="contactsLV" ItemsSource="{Binding Contacts}" SelectionMode="None" SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
-            IsPullToRefreshEnabled="True" CachingStrategy="RecycleElement">
+            x:Name="contactsLV" ItemsSource="{Binding Contacts}" SelectionMode="Single" SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
+            CachingStrategy="RecycleElement">
 
         <ListView.ItemTemplate>
           <DataTemplate>

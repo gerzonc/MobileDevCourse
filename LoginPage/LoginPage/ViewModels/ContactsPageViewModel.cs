@@ -21,9 +21,6 @@ namespace LoginPage.ViewModels
 
         public ContactsPageViewModel()
         {
-            
-            
-
             AddItem = new Command(async () =>
             {       
                 await App.Current.MainPage.Navigation.PushAsync(new AddContactPage());
@@ -37,7 +34,8 @@ namespace LoginPage.ViewModels
                 switch (actionSheet)
                 {
                     case "Edit":
-                        EditContact();
+                        MessagingCenter.Send<ContactsPageViewModel, Contact>(this, "Edit", contact);
+                        await App.Current.MainPage.Navigation.PushAsync(new EditContactPage());
                         break;
                     default:
                         CallContact(args.PhoneNumber);
@@ -50,42 +48,27 @@ namespace LoginPage.ViewModels
                 Contacts.Remove(args);
             });
 
+            MessagingCenter.Subscribe<EditContactPageViewModel, Contact>(this, "Edit", (sender, args) =>
+            {
+                MessagingCenter.Unsubscribe<EditContactPageViewModel>(this, "Edit");
+                contact = args;
+            });
+
             MessagingCenter.Subscribe<AddContactPageViewModel, Contact>(this, "AddNew", (sender, args) =>
             {
                 MessagingCenter.Unsubscribe<AddContactPageViewModel>(this, "AddNew");
                 Contacts.Add(args);
             });
 
-            //DeleteItem = new Command(async (e) =>
-            //{
-            //    if (e.Item == null)
-            //        return;
-
-
-            //    var actionSheet = await DisplayActionSheet(string.Empty, "Cancel", string.Empty, "More", "Edit");
-
-            //    switch (actionSheet)
-            //    {
-            //        case "Call +":
-            //            await DisplayAlert("OK", "OK", "OK");
-            //            break;
-
-            //    }
-
-            ////Deselect Item
-            //((ListView)sender).SelectedItem = null;
-            //});
+            
         }
 
-        public async void EditContact()
-        {
-            await App.Current.MainPage.Navigation.PushAsync(new AddContactPage());
-            MessagingCenter.Send<ContactsPageViewModel, Contact>(this, "Edit", contact);
-
-        }
 
         public async void CallContact(string phoneNumber)
         {
+            if (string.IsNullOrWhiteSpace(phoneNumber))
+                return;
+
             try
             {
                 PhoneDialer.Open(phoneNumber);
