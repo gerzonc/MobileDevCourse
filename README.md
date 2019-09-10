@@ -12,3 +12,6 @@ https://tinyurl.com/y4afo4gg
 
 ## Homework 2 - Login Page (MVVM + Data Binding + INotifyPropertyChanged):
 https://tinyurl.com/yxj2osuu
+
+## Homework 3 - MessagingCenter:
+https://tinyurl.com/y2mcg557
