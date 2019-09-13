@@ -7,8 +7,8 @@
              x:Class="LoginPage.Views.EditContactPage" Title="Edit">
     <ContentPage.Content>
         <StackLayout>
-            <Entry Text="{Binding contact.Name}" Placeholder="Name"/>
-            <Entry Text="{Binding contact.PhoneNumber}" Placeholder="Phone number"/>
+            <Entry Text="{Binding Contact.Name, Mode=TwoWay}" Placeholder="Name"/>
+            <Entry Text="{Binding Contact.PhoneNumber, Mode=TwoWay}" Placeholder="Phone number"/>
             <StackLayout VerticalOptions="CenterAndExpand">
 
             </StackLayout>

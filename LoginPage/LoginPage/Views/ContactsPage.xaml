@@ -23,8 +23,8 @@
                                   CommandParameter="{Binding .}"/>
                     </ViewCell.ContextActions>
                     <StackLayout>
-                        <Label Text="{Binding Name}" FontAttributes="Bold"/>
-                        <Label Text="{Binding PhoneNumber}"/>
+                        <Label Text="{Binding Name, Mode=TwoWay}" FontAttributes="Bold"/>
+                        <Label Text="{Binding PhoneNumber, Mode=TwoWay}"/>
                     </StackLayout>
                 </ViewCell>
             </DataTemplate>

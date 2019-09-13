@@ -11,13 +11,13 @@ namespace LoginPage.ViewModels
 {
     public class AddContactPageViewModel : INotifyPropertyChanged
     {
-        public Contact contact { get; set; } = new Contact();
+        public Contact Contact { get; set; } = new Contact();
         public ICommand sendUser { get; set; }
         public AddContactPageViewModel()
         {
             sendUser = new Command(async () =>
             {
-                MessagingCenter.Send<AddContactPageViewModel, Contact>(this, "AddNew", contact);
+                MessagingCenter.Send<AddContactPageViewModel, Contact>(this, "AddNew", Contact);
                 await App.Current.MainPage.Navigation.PopAsync();
             });
 

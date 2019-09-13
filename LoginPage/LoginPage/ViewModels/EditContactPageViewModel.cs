@@ -11,18 +11,18 @@ namespace LoginPage.ViewModels
     public class EditContactPageViewModel : INotifyPropertyChanged
     {
         public ICommand editItem { get; set; }
-        public Contact contact { get; set; } = new Contact();
+        public Contact Contact { get; set; } = new Contact();
         public EditContactPageViewModel()
         {
             MessagingCenter.Subscribe<ContactsPageViewModel, Contact>(this, "Edit", (sender, param) =>
             {
                 MessagingCenter.Unsubscribe<ContactsPageViewModel, Contact>(this, "Edit");
-                contact = param;
+                Contact = param;
             });
 
             editItem = new Command(async () =>
             {
-                MessagingCenter.Send<EditContactPageViewModel, Contact>(this, "Edit", contact);
+                MessagingCenter.Send<EditContactPageViewModel, Contact>(this, "EditP", Contact);
                 await App.Current.MainPage.Navigation.PopAsync();
             });
         }

@@ -8,8 +8,8 @@
              Title="New User">
     <ContentPage.Content>
         <StackLayout>
-            <Entry Text="{Binding contact.Name}" Placeholder="Name"/>
-            <Entry Text="{Binding contact.PhoneNumber}" Placeholder="Phone number"/>
+            <Entry Text="{Binding Contact.Name}" Placeholder="Name"/>
+            <Entry Text="{Binding Contact.PhoneNumber}" Placeholder="Phone number"/>
             <StackLayout VerticalOptions="CenterAndExpand">
                 
             </StackLayout>

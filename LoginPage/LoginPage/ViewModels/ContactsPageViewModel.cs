@@ -14,7 +14,7 @@ namespace LoginPage.ViewModels
     public class ContactsPageViewModel : INotifyPropertyChanged
     {
         public ObservableCollection<Contact> Contacts { get; set; } = new ObservableCollection<Contact>();
-        public Contact contact { get; set; }
+        public Contact Contact { get; set; }
         public ICommand AddItem { get; set; } 
         public ICommand DeleteItem { get; set; }
         public ICommand MoreItem { get; set; }
@@ -48,10 +48,10 @@ namespace LoginPage.ViewModels
                 Contacts.Remove(args);
             });
 
-            MessagingCenter.Subscribe<EditContactPageViewModel, Contact>(this, "Edit", (sender, args) =>
+            MessagingCenter.Subscribe<EditContactPageViewModel, Contact>(this, "EditP", (sender, args) =>
             {
-                MessagingCenter.Unsubscribe<EditContactPageViewModel>(this, "Edit");
-                contact = args;
+                MessagingCenter.Unsubscribe<EditContactPageViewModel>(this, "EditP");
+                Contact = args;
             });
 
             MessagingCenter.Subscribe<AddContactPageViewModel, Contact>(this, "AddNew", (sender, args) =>
