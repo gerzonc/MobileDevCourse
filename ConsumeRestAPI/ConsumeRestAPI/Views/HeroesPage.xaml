@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ConsumeRestAPI.Views.HeroesPage" >
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" Padding="0" Margin="5,10">
+                <Entry x:Name="searchEntry" Text="{Binding Hero.localized_name}" Placeholder="Search..."
+                           HorizontalOptions="FillAndExpand"
+                   VerticalOptions="StartAndExpand"/>
+                <ImageButton x:Name="searchButton" BackgroundColor="DeepSkyBlue" HeightRequest="50" WidthRequest="50"
+                         VerticalOptions="StartAndExpand" CornerRadius="25"/>
+            </StackLayout>
+            <StackLayout Orientation="Vertical" >
+                <Frame Padding="0">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="{Binding localized_name, StringFormat='Hero: {0}'}" 
+                               HorizontalOptions="FillAndExpand"/>
+                        <Label Text="{Binding id, StringFormat='ID: {0}'}"
+                               HorizontalOptions="FillAndExpand"/>
+                        <Label Text="{Binding attack_type, StringFormat='Type: {0}'}"
+                               HorizontalOptions="FillAndExpand"/>
+                        <Label Text="{Binding roles, StringFormat='Role(s): {0}'}"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
