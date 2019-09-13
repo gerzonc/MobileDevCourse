@@ -1,17 +1,10 @@
-# MobileDevCourse
-This repository contains all the practices that I made on my Mobile Application Development Course. Every homework it's a branch from ```master```
+# Homework 4 - Consume a RestAPI
 
-## Homework 1 - Login Page:
-https://tinyurl.com/y65hulcu
+Description: 
+- Use the API of your finale project, making a request to that and displaying the data on the screen.
 
-## Homework Extra I - Replicate Design:
-https://tinyurl.com/y3ubnos2
+- Every member of the team must use a different endpoint
 
-## Homework Extra II - Replicate Design:
-https://tinyurl.com/y4afo4gg
+- The app must validate that there is Internet connection before doing the request, otherwise it should display an error message.
 
-## Homework 2 - Login Page (MVVM + Data Binding + INotifyPropertyChanged):
-https://tinyurl.com/yxj2osuu
-
-## Homework 3 - MessagingCenter:
-https://tinyurl.com/y2mcg557
+- You must elaborate this homework with the steps we saw in the course (Create an API Service folder, create an interface, etc.)
