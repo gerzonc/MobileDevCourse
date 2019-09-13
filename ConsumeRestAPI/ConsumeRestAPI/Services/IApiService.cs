@@ -12,8 +12,6 @@ namespace ConsumeRestAPI.Services
         [Get("/api/heroes")]
         Task<List<Heroes>> GetHeroes();
 
-        [Get("/api/heroes")]
-        Task<List<Heroes>> GetHeroes(string id);
 
     }
 }

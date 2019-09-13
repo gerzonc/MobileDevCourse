@@ -1,0 +1,139 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\gerzo\\source\\repos\\ConsumeRestAPI\\ConsumeRestAPI\\ConsumeRestAPI.iOS\\ConsumeRestAPI.iOS.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\gerzo\\source\\repos\\ConsumeRestAPI\\ConsumeRestAPI\\ConsumeRestAPI.iOS\\ConsumeRestAPI.iOS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gerzo\\source\\repos\\ConsumeRestAPI\\ConsumeRestAPI\\ConsumeRestAPI.iOS\\ConsumeRestAPI.iOS.csproj",
+        "projectName": "ConsumeRestAPI.iOS",
+        "projectPath": "C:\\Users\\gerzo\\source\\repos\\ConsumeRestAPI\\ConsumeRestAPI\\ConsumeRestAPI.iOS\\ConsumeRestAPI.iOS.csproj",
+        "packagesPath": "C:\\Users\\gerzo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gerzo\\source\\repos\\ConsumeRestAPI\\ConsumeRestAPI\\ConsumeRestAPI.iOS\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gerzo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "xamarinios10"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "xamarinios10": {
+            "projectReferences": {
+              "C:\\Users\\gerzo\\source\\repos\\ConsumeRestAPI\\ConsumeRestAPI\\ConsumeRestAPI\\ConsumeRestAPI.csproj": {
+                "projectPath": "C:\\Users\\gerzo\\source\\repos\\ConsumeRestAPI\\ConsumeRestAPI\\ConsumeRestAPI\\ConsumeRestAPI.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "dependencies": {
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.3.0, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.2.0.778463, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\gerzo\\source\\repos\\ConsumeRestAPI\\ConsumeRestAPI\\ConsumeRestAPI\\ConsumeRestAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gerzo\\source\\repos\\ConsumeRestAPI\\ConsumeRestAPI\\ConsumeRestAPI\\ConsumeRestAPI.csproj",
+        "projectName": "ConsumeRestAPI",
+        "projectPath": "C:\\Users\\gerzo\\source\\repos\\ConsumeRestAPI\\ConsumeRestAPI\\ConsumeRestAPI\\ConsumeRestAPI.csproj",
+        "packagesPath": "C:\\Users\\gerzo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gerzo\\source\\repos\\ConsumeRestAPI\\ConsumeRestAPI\\ConsumeRestAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gerzo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "PropertyChanged.Fody": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.3.0, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.2.0.778463, )"
+            },
+            "refit": {
+              "target": "Package",
+              "version": "[4.7.51, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

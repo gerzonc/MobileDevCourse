@@ -3,30 +3,44 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ViewModels="clr-namespace:ConsumeRestAPI.ViewModels"
              mc:Ignorable="d"
-             x:Class="ConsumeRestAPI.Views.HeroesPage" >
-    <ContentPage.Content>
+             x:Class="ConsumeRestAPI.Views.HeroesPage">
+    <ContentPage.BindingContext>
+        <ViewModels:HeroesPageViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout>
         <StackLayout>
-            <StackLayout Orientation="Horizontal" Padding="0" Margin="5,10">
-                <Entry x:Name="searchEntry" Text="{Binding Hero.localized_name}" Placeholder="Search..."
-                           HorizontalOptions="FillAndExpand"
-                   VerticalOptions="StartAndExpand"/>
-                <ImageButton x:Name="searchButton" BackgroundColor="DeepSkyBlue" HeightRequest="50" WidthRequest="50"
-                         VerticalOptions="StartAndExpand" CornerRadius="25"/>
-            </StackLayout>
-            <StackLayout Orientation="Vertical" >
-                <Frame Padding="0">
-                    <StackLayout Orientation="Horizontal">
-                        <Label Text="{Binding localized_name, StringFormat='Hero: {0}'}" 
-                               HorizontalOptions="FillAndExpand"/>
-                        <Label Text="{Binding id, StringFormat='ID: {0}'}"
-                               HorizontalOptions="FillAndExpand"/>
-                        <Label Text="{Binding attack_type, StringFormat='Type: {0}'}"
-                               HorizontalOptions="FillAndExpand"/>
-                        <Label Text="{Binding roles, StringFormat='Role(s): {0}'}"/>
-                    </StackLayout>
-                </Frame>
-            </StackLayout>
+            <Button Text="GET DATA" Command="{Binding GetHeroCommand, Mode=TwoWay}"/>
         </StackLayout>
-    </ContentPage.Content>
+        <ListView x:Name="MyListView"
+            ItemsSource="{Binding Heroes}"
+            CachingStrategy="RecycleElement">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+
+                            <Label Text="{Binding id}" 
+                   d:Text="{Binding .}"
+                   Style="{DynamicResource ListItemTextStyle}" />
+                            <Label Text="{Binding localized_name}" 
+                   d:Text="{Binding .}"
+                   Style="{DynamicResource ListItemTextStyle}" />
+                            <Label Text="{Binding attack_type}" 
+                   d:Text="Detail"
+                   Style="{DynamicResource ListItemDetailTextStyle}"/>
+                            <Label Text="{Binding roles}" 
+                   d:Text="Detail"
+                   Style="{DynamicResource ListItemDetailTextStyle}"/>
+
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+    </StackLayout>
+    
 </ContentPage>

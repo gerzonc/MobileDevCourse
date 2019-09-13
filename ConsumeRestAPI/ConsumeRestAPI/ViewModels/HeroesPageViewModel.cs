@@ -15,16 +15,13 @@ namespace ConsumeRestAPI.ViewModels
     public class HeroesPageViewModel : INotifyPropertyChanged
     {
         IApiService apiService = new ApiService();
-        public Heroes Hero { get; set; }
 
-        public int id { get; set; }
-        public string localized_name { get; set; }
-        public string attack_type { get; set; }
+        public ObservableCollection<Heroes> Heroes { get; set; }
 
-        public ICommand heroSearch { get; set; }
+        public ICommand GetHeroCommand { get; set; }
         public HeroesPageViewModel()
         {
-            heroSearch = new Command(async() => {
+            GetHeroCommand = new Command(async() => {
                 await GetHero();
             });
         }
@@ -34,7 +31,8 @@ namespace ConsumeRestAPI.ViewModels
             var current = Connectivity.NetworkAccess;
             if (current == NetworkAccess.Internet)
             {
-                var heroe = await apiService.GetHeroes();
+                var hero = await apiService.GetHeroes();
+                Heroes = new ObservableCollection<Heroes>(hero);
             }
             else
             {

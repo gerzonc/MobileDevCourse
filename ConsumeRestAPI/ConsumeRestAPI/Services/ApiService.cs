@@ -15,10 +15,10 @@ namespace ConsumeRestAPI.Services
         {
 
         }
-        public async Task<Heroes> GetHeroes(string id)
+        public async Task<List<Heroes>> GetHeroes()
         {
-            var dotaAPI = RestService.For<IApiService>("https://api.opendota.com/");
-            var hero = await dotaAPI.GetHeroes(id);
+            var dotaAPI = RestService.For<IApiService>("https://api.opendota.com");
+            var hero = await dotaAPI.GetHeroes();
 
             return hero;
         }
