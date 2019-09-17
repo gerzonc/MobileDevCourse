@@ -16,4 +16,4 @@ You can find data that can be used to convert hero and ability IDs and other inf
 
 ## The Heroes Endpoint
 
-In my application I used the heroes endpoint because is the only thing I was interested to. With this endpoint I can get information about Dota 2 Heroes, such as ID, name, primary attack attribute and game roles.
+In my application I used the heroes endpoint because is the only thing I was interested to. With this endpoint I can get information about Dota 2's heroes, such as character ID, name, primary attack attribute and game roles. In further updates I plan to get information like: character image, tap to check heroe builds or heroe biography, etc.
