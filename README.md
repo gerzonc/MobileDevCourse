@@ -1,4 +1,4 @@
-# Homework 4 - Consume a RestAPI
+# Homework 4 - Consume an API
 
 ## Description: 
 - Use the API of your finale project, making a request to that and displaying the data on the screen.
