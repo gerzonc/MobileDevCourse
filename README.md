@@ -1,20 +1,14 @@
-# MobileDevCourse
-This repository contains all the practices that I made on my Mobile Application Development Course. Every homework it's a branch from ```master```
+# Homework 5 - Exercise Dependency Services, Custom Renderers and Effects + Create a Paint App
 
-## Homework 1 - Login Page:
-https://tinyurl.com/y65hulcu
+## Description: 
+Do every practice done in class (Live individual exercises):
+- Dependecy service to get the deviceorientation (+3 Pts)
+- Custom renderer to change entry background color (+3 Pts)
+- Focused Effect (+4 Pts)
 
-## Homework Extra I - Replicate Design:
-https://tinyurl.com/y3ubnos2
+## Create a Paint App
 
-## Homework Extra II - Replicate Design:
-https://tinyurl.com/y4afo4gg
+Do the functionality of painting on screen, this should allow to select any desired color and start painting with the selected color. Take this article as base: https://askxammy.com/painting-your-screen-with-xamarin-forms/  
 
-## Homework 2 - Login Page (MVVM + Data Binding + INotifyPropertyChanged):
-https://tinyurl.com/yxj2osuu
-
-## Homework 3 - MessagingCenter:
-https://tinyurl.com/y2mcg557
-
-## Homework 4 - Consume an API
-https://tinyurl.com/y2zheo8z
+Also it should have a clear button (+5 pts)
+ 
