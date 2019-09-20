@@ -16,5 +16,8 @@ https://tinyurl.com/yxj2osuu
 ## Homework 3 - MessagingCenter:
 https://tinyurl.com/y2mcg557
 
-## Homework 4 - Consume an API
+## Homework 4 - Consume an API:
 https://tinyurl.com/y2zheo8z
+
+## Homework 5 - Dependecy Service, Custom Renderer and Effects:
+https://tinyurl.com/y65ulhtp
