@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:XamExercise3.Controls"
+             mc:Ignorable="d"
+             x:Class="XamExercise3.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Entry Text="Effect attached to an Entry">
+            <Entry.Effects>
+                <local:FocusEffect />
+            </Entry.Effects>
+            ...
+        </Entry>
+        <Entry Text="Hello World!"/>
+    </StackLayout>
+
+</ContentPage>
