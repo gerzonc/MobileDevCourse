@@ -1,5 +1,5 @@
 # XAML: Tips and tricks
 
 ## Description
- Crear un proyecto utilizando 5 de los XAML tips and tricks  
- - Elegir 5 tips y hacer un ejemplo que los utilice  
+Create a project using 5 XAML tips and tricks
+ - Choose 5 tips and create an example using them  
