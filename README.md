@@ -26,4 +26,4 @@ https://tinyurl.com/y65ulhtp
 https://tinyurl.com/y28k8qbq
 
 ## Homework 7 - XAML: Tips and tricks:
-https://github.com/gerzonc/MobileDevCourse/tree/hw7
+https://tinyurl.com/y6susng2
