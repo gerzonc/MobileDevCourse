@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Hw7.ViewModels.MainPage"
+             NavigationPage.HasNavigationBar="False"
+             NavigationPage.HasBackButton="False">
+    <ContentPage.Content>
+        <StackLayout >
+            <Label x:Name="group" Text="{Binding myName,StringFormat='Hello {0}, welcome to my TED Talk.'}" />
+            <Label x:Name="herName" Text="{Binding Username}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
