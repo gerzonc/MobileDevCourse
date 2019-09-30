@@ -21,3 +21,9 @@ https://tinyurl.com/y2zheo8z
 
 ## Homework 5 - Dependecy Service, Custom Renderer and Effects:
 https://tinyurl.com/y65ulhtp
+
+## Homework 6 - PRISM Architecture:
+https://tinyurl.com/y28k8qbq
+
+## Homework 7 - XAML: Tips and tricks:
+https://github.com/gerzonc/MobileDevCourse/tree/hw7
